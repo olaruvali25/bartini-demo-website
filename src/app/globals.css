@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0e0e0e;
+  --surface: #161616;
+  --surface-2: #1d1d1d;
+  --text: #f3f2ef;
+  --brand-red: #a30000;
+  --brand-red-deep: #b11217;
+  --gold: #c9a227;
+  --font-display: "Bodoni Moda", "Didot", "Times New Roman", "Georgia", serif;
+  --font-body: "Sora", "Avenir Next", "Segoe UI", "Tahoma", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --font-sans: var(--font-body);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(
+      circle at 78% 0%,
+      rgba(163, 0, 0, 0.23),
+      transparent 33%
+    ),
+    radial-gradient(circle at 12% 20%, rgba(177, 18, 23, 0.12), transparent 28%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  text-rendering: geometricPrecision;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+
+.bg-ambient {
+  background: radial-gradient(circle at 14% 22%, rgba(163, 0, 0, 0.16), transparent 44%),
+    radial-gradient(circle at 84% 6%, rgba(201, 162, 39, 0.08), transparent 42%),
+    radial-gradient(circle at 55% 83%, rgba(177, 18, 23, 0.12), transparent 48%);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes ambientShift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -1.2%, 0) scale(1.02);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.animate-ambient {
+  animation: ambientShift 13s ease-in-out infinite;
+}

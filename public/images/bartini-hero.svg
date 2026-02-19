@@ -1,0 +1,80 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="800" y1="0" x2="800" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#26090A"/>
+      <stop offset="0.55" stop-color="#140D10"/>
+      <stop offset="1" stop-color="#090909"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(340 220) rotate(29) scale(520 280)">
+      <stop stop-color="#C9151D" stop-opacity="0.46"/>
+      <stop offset="1" stop-color="#C9151D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1240 120) rotate(12) scale(400 210)">
+      <stop stop-color="#C9A227" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#C9A227" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="city" x1="0" y1="430" x2="0" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D1D1D"/>
+      <stop offset="1" stop-color="#060606"/>
+    </linearGradient>
+    <linearGradient id="railing" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#B7901F"/>
+      <stop offset="1" stop-color="#684F14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="980" fill="url(#bg)"/>
+  <rect width="1600" height="980" fill="url(#glowA)"/>
+  <rect width="1600" height="980" fill="url(#glowB)"/>
+
+  <g opacity="0.75">
+    <circle cx="1510" cy="68" r="1.7" fill="#FFF2D0"/>
+    <circle cx="1348" cy="98" r="1.2" fill="#FFECC0"/>
+    <circle cx="1204" cy="55" r="1.4" fill="#FFECC0"/>
+    <circle cx="943" cy="110" r="1.2" fill="#FFECC0"/>
+    <circle cx="804" cy="62" r="1.4" fill="#FFF2D0"/>
+    <circle cx="542" cy="84" r="1.2" fill="#FFECC0"/>
+    <circle cx="362" cy="58" r="1.4" fill="#FFF2D0"/>
+    <circle cx="210" cy="122" r="1.2" fill="#FFECC0"/>
+  </g>
+
+  <path d="M0 470L38 452L84 464L118 412L162 434L204 398L255 414L286 386L332 406L384 372L424 390L472 360L518 390L568 346L602 366L642 332L676 350L712 336L754 360L798 326L846 346L890 312L928 334L972 304L1010 332L1048 292L1086 322L1130 286L1168 320L1210 276L1264 306L1304 264L1354 292L1402 248L1450 286L1492 256L1538 286L1600 274V840H0V470Z" fill="url(#city)"/>
+
+  <g opacity="0.65">
+    <rect x="84" y="534" width="44" height="150" fill="#141414"/>
+    <rect x="92" y="546" width="8" height="10" fill="#B68E26"/>
+    <rect x="106" y="564" width="8" height="10" fill="#B68E26"/>
+    <rect x="198" y="520" width="58" height="176" fill="#101010"/>
+    <rect x="214" y="542" width="10" height="12" fill="#A57E1E"/>
+    <rect x="228" y="564" width="10" height="12" fill="#A57E1E"/>
+    <rect x="424" y="508" width="74" height="196" fill="#121212"/>
+    <rect x="444" y="536" width="12" height="13" fill="#B7901F"/>
+    <rect x="462" y="556" width="12" height="13" fill="#B7901F"/>
+    <rect x="640" y="522" width="64" height="182" fill="#0F0F0F"/>
+    <rect x="838" y="504" width="78" height="214" fill="#121212"/>
+    <rect x="858" y="536" width="12" height="13" fill="#B7901F"/>
+    <rect x="876" y="556" width="12" height="13" fill="#B7901F"/>
+    <rect x="1082" y="516" width="66" height="198" fill="#0F0F0F"/>
+    <rect x="1306" y="500" width="86" height="224" fill="#111"/>
+    <rect x="1330" y="534" width="12" height="13" fill="#B7901F"/>
+    <rect x="1348" y="554" width="12" height="13" fill="#B7901F"/>
+  </g>
+
+  <rect y="700" width="1600" height="280" fill="#090909"/>
+  <rect y="722" width="1600" height="4" fill="url(#railing)"/>
+  <rect y="758" width="1600" height="2" fill="#3A2B11"/>
+
+  <g opacity="0.86">
+    <rect x="200" y="724" width="8" height="180" fill="#2A2A2A"/>
+    <rect x="340" y="724" width="8" height="180" fill="#2A2A2A"/>
+    <rect x="480" y="724" width="8" height="180" fill="#2A2A2A"/>
+    <rect x="620" y="724" width="8" height="180" fill="#2A2A2A"/>
+    <rect x="760" y="724" width="8" height="180" fill="#2A2A2A"/>
+    <rect x="900" y="724" width="8" height="180" fill="#2A2A2A"/>
+    <rect x="1040" y="724" width="8" height="180" fill="#2A2A2A"/>
+    <rect x="1180" y="724" width="8" height="180" fill="#2A2A2A"/>
+    <rect x="1320" y="724" width="8" height="180" fill="#2A2A2A"/>
+  </g>
+
+  <ellipse cx="800" cy="782" rx="640" ry="126" fill="url(#glowA)" opacity="0.25"/>
+</svg>
