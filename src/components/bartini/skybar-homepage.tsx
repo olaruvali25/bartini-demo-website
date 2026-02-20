@@ -14,7 +14,7 @@ type Language = "ro" | "en";
 
 const galleryItems = [
   {
-    image: "/images/gallery-1.jpg",
+    image: "/images/gallery-1-original.jpg",
     titleRo: "Top Shelf Signature",
     titleEn: "Top Shelf Signature",
     subtitleRo: "Cocktailuri premium cu semnatura Bartini",
