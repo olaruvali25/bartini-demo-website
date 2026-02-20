@@ -29,6 +29,7 @@ const galleryItems = [
   },
   {
     image: "/images/gallery-3.png",
+    video: "/images/signature-nights.mp4",
     titleRo: "Nopti Emblematice",
     titleEn: "Signature Nights",
     subtitleRo: "Muzica, energie si vibe exclusiv",
@@ -611,14 +612,29 @@ export function SkybarHomepage({ currentYear }: { currentYear: number }) {
                     whileHover={{ y: -6 }}
                     className="w-[70%] shrink-0 snap-start overflow-hidden rounded-[28px] border border-white/12 bg-black/55"
                   >
-                    <Image
-                      src={item.image}
-                      alt={isRo ? item.titleRo : item.titleEn}
-                      width={960}
-                      height={720}
-                      sizes="70vw"
-                      className="h-72 w-full object-cover"
-                    />
+                    {item.video ? (
+                      <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                        poster={item.image}
+                        className="h-72 w-full object-cover"
+                        aria-label={isRo ? item.titleRo : item.titleEn}
+                      >
+                        <source src={item.video} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <Image
+                        src={item.image}
+                        alt={isRo ? item.titleRo : item.titleEn}
+                        width={960}
+                        height={720}
+                        sizes="70vw"
+                        className="h-72 w-full object-cover"
+                      />
+                    )}
                     <div className="p-5">
                       <p className="font-display text-2xl text-white">
                         {isRo ? item.titleRo : item.titleEn}
@@ -655,14 +671,29 @@ export function SkybarHomepage({ currentYear }: { currentYear: number }) {
                     index === 3 && "col-span-7 min-h-[245px]",
                   )}
                 >
-                  <Image
-                    src={item.image}
-                    alt={isRo ? item.titleRo : item.titleEn}
-                    width={960}
-                    height={720}
-                    sizes="(min-width: 768px) 45vw, 95vw"
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
+                  {item.video ? (
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
+                      poster={item.image}
+                      className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                      aria-label={isRo ? item.titleRo : item.titleEn}
+                    >
+                      <source src={item.video} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <Image
+                      src={item.image}
+                      alt={isRo ? item.titleRo : item.titleEn}
+                      width={960}
+                      height={720}
+                      sizes="(min-width: 768px) 45vw, 95vw"
+                      className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,0.86)_88%)]" />
                   <div className="absolute bottom-0 left-0 p-6">
                     <p className="font-display text-2xl text-white">
