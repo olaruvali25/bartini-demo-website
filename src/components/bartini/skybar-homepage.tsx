@@ -87,9 +87,9 @@ const testimonials = [
 
 const instagramShowcase = [
   {
-    src: "/images/follow-ig-1.png",
+    src: "/images/replacement-photo.jpg",
     type: "image" as const,
-    objectPosition: "center 34%",
+    objectPosition: "center",
     labelRo: "Mixologie",
     labelEn: "Mixology",
   },
